@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using QFSW.QC;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -158,23 +157,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     #endregion
 
-    #region Command
-    [Command]
-    public void CountPlayers()
-    {
-        Debug.Log("Players Count " + PhotonNetwork.CountOfPlayers);
-    }
 
-
-    [Command]
-    public void CountRooms()
-    {
-        Debug.Log("Room Count " + PhotonNetwork.CountOfRooms);
-        Debug.Log("Room Players Count " + PhotonNetwork.CountOfPlayersInRooms);
-        
-    }
-
-
-
-    #endregion
+ 
 }
